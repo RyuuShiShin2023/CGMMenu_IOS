@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B41F47529F2864A000DA2BC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B41F47429F2864A000DA2BC /* Launch Screen.storyboard */; };
 		4BDB845E29EF9D4C0005ABC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB845D29EF9D4C0005ABC2 /* AppDelegate.swift */; };
 		4BDB846029EF9D4C0005ABC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB845F29EF9D4C0005ABC2 /* SceneDelegate.swift */; };
 		4BDB846229EF9D4C0005ABC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB846129EF9D4C0005ABC2 /* ViewController.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B41F47429F2864A000DA2BC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4BDB845A29EF9D4C0005ABC2 /* Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDB845D29EF9D4C0005ABC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BDB845F29EF9D4C0005ABC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		4BDB845C29EF9D4C0005ABC2 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				4B41F47429F2864A000DA2BC /* Launch Screen.storyboard */,
 				4BDB845D29EF9D4C0005ABC2 /* AppDelegate.swift */,
 				4BDB845F29EF9D4C0005ABC2 /* SceneDelegate.swift */,
 				4BDB846129EF9D4C0005ABC2 /* ViewController.swift */,
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B41F47529F2864A000DA2BC /* Launch Screen.storyboard in Resources */,
 				4BDB846729EF9D4E0005ABC2 /* Assets.xcassets in Resources */,
 				4BDB846529EF9D4C0005ABC2 /* Main.storyboard in Resources */,
 			);
@@ -273,6 +277,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R99JYYW6C9;
@@ -280,7 +285,7 @@
 				INFOPLIST_FILE = Menu/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CGMMenu;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -292,6 +297,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.cgm.CGMMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,6 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R99JYYW6C9;
@@ -310,7 +317,7 @@
 				INFOPLIST_FILE = Menu/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CGMMenu;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -322,6 +329,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.cgm.CGMMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
