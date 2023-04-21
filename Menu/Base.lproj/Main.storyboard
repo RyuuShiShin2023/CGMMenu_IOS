@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Menu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YYH-uV-i79">
+                                <rect key="frame" x="0.0" y="757.33333333333337" width="393" height="60.666666666666629"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJT-NZ-yko" userLabel="back">
+                                        <rect key="frame" x="0.0" y="6" width="60.666666666666664" height="48.666666666666664"/>
+                                        <color key="tintColor" systemColor="linkColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                                        <connections>
+                                            <action selector="backClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CVK-Rl-W1I"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STO-p0-eMw" userLabel="forward">
+                                        <rect key="frame" x="110.66666666666667" y="6" width="60.666666666666671" height="48.666666666666664"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
+                                        <connections>
+                                            <action selector="forwardClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dEW-VC-6Of"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Phb-ah-PPQ" userLabel="home">
+                                        <rect key="frame" x="221.66666666666666" y="6" width="60.666666666666657" height="48.666666666666664"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="house" catalog="system"/>
+                                        <connections>
+                                            <action selector="homeClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZSl-vj-Pvh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdU-qK-K3I" userLabel="refresh">
+                                        <rect key="frame" x="332.33333333333331" y="6" width="60.666666666666686" height="48.666666666666664"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrow.clockwise" catalog="system"/>
+                                        <connections>
+                                            <action selector="refreshClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Pv-fe-lDt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstItem="Phb-ah-PPQ" firstAttribute="centerY" secondItem="YYH-uV-i79" secondAttribute="centerY" id="4w2-pK-7Hb"/>
+                                    <constraint firstItem="EJT-NZ-yko" firstAttribute="width" secondItem="YYH-uV-i79" secondAttribute="height" multiplier="1:1" id="D2g-VK-ZhO"/>
+                                    <constraint firstItem="STO-p0-eMw" firstAttribute="height" secondItem="YYH-uV-i79" secondAttribute="height" multiplier="0.8" id="Kc9-bo-UVB"/>
+                                    <constraint firstItem="STO-p0-eMw" firstAttribute="centerY" secondItem="YYH-uV-i79" secondAttribute="centerY" id="Mdp-Xl-dzF"/>
+                                    <constraint firstItem="EJT-NZ-yko" firstAttribute="centerY" secondItem="YYH-uV-i79" secondAttribute="centerY" id="Tqm-Yz-KrP"/>
+                                    <constraint firstItem="STO-p0-eMw" firstAttribute="width" secondItem="YYH-uV-i79" secondAttribute="height" multiplier="1:1" id="ahx-N9-U0S"/>
+                                    <constraint firstItem="PdU-qK-K3I" firstAttribute="centerY" secondItem="YYH-uV-i79" secondAttribute="centerY" id="cD9-QJ-ANL"/>
+                                    <constraint firstItem="Phb-ah-PPQ" firstAttribute="height" secondItem="YYH-uV-i79" secondAttribute="height" multiplier="0.8" id="ctM-je-pdQ"/>
+                                    <constraint firstItem="PdU-qK-K3I" firstAttribute="height" secondItem="YYH-uV-i79" secondAttribute="height" multiplier="0.8" id="dfu-6c-uQN"/>
+                                    <constraint firstItem="PdU-qK-K3I" firstAttribute="width" secondItem="YYH-uV-i79" secondAttribute="height" multiplier="1:1" id="f32-3d-fl3"/>
+                                    <constraint firstItem="Phb-ah-PPQ" firstAttribute="width" secondItem="YYH-uV-i79" secondAttribute="height" multiplier="1:1" id="qLR-1G-bBV"/>
+                                    <constraint firstItem="EJT-NZ-yko" firstAttribute="height" secondItem="YYH-uV-i79" secondAttribute="height" multiplier="0.8" id="wSV-Ha-FAs"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YYH-uV-i79" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0g9-Qn-ETK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YYH-uV-i79" secondAttribute="trailing" id="ODw-l5-Tgj"/>
+                            <constraint firstItem="YYH-uV-i79" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.08" id="Ww6-gN-ORW"/>
+                            <constraint firstItem="YYH-uV-i79" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="e15-nU-HJI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="EJT-NZ-yko" id="dGD-Eg-L9Y"/>
+                        <outlet property="forwardBtn" destination="STO-p0-eMw" id="gLv-YX-SbF"/>
+                        <outlet property="homeBtn" destination="Phb-ah-PPQ" id="MYC-a6-uT1"/>
+                        <outlet property="navigationBar" destination="YYH-uV-i79" id="VmS-uz-Ds1"/>
+                        <outlet property="refreshBtn" destination="PdU-qK-K3I" id="44m-8h-YHi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
