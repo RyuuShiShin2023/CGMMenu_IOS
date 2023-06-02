@@ -43,7 +43,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     }
     
     func showHomePage() {
-        let url = NSURL(string: "https://medicine.cgmmedical.jp/index.html")
+        let url = NSURL(string: "https://medicine.cgmgroup.jp/")
         let request = NSURLRequest(url: url! as URL)
         webView.load(request as URLRequest)
     }
